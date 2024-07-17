@@ -14,7 +14,7 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
 
 - Key-value 저장소 : In-memory Data Store
     - Java Collections Framework의 Map 자료구조를 사용 예정
-    - 기본 Map 자료구조가 아닌 Tread-safe하게 사용 가능한 ConcurrentMap 사용,
+    - 기본 Map 자료구조가 아닌 Thread-safe하게 사용 가능한 ConcurrentMap 사용,
       구현체로는 ConcurrentHashMap 클래스 사용
 - 클라이언트 연결 수락을 하기 위한 Event Loop Group
     - Netty Threading Model과 같이 클라이언트의 연결을 수락할 수 있는 Boss Group,
