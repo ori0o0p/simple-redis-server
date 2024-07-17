@@ -17,6 +17,8 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
     - 기본 Map 자료구조가 아닌 Thread-safe하게 사용 가능한 ConcurrentMap 사용,
       구현체로는 ConcurrentHashMap 클래스 사용
 - 클라이언트 연결 수락을 하기 위한 Event Loop Group
+     ![image](https://github.com/user-attachments/assets/d949a4e3-1674-4aaa-a454-52844c72288f)
+
     - Netty Threading Model과 같이 클라이언트의 연결을 수락할 수 있는 Boss Group,
       연결된 클라이언트의 실제 데이터 통신(I/O처리)를 하는 Worker Group으로 구성
     - NIO API의 기능 활용하기 위해 NioEventLoopGroup 사용, Boss Group는 1개로 고정 NioEventLoopGroup(1)
