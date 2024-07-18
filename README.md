@@ -29,7 +29,7 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
 - 새로운 연결을 수락할 소켓 채널
     - NIO API의 기능 활용하기 위해 NioServerSocketChannel 사용.
 - 채널 초기화 pipeline
-    - ServerBootstrap을 사용하여 채널 초기화 pipeline를 구성할 때, ChannelPipeline를 사용하여  
+    - ServerBootstrap을 사용하여 채널 초기화 pipeline를 구성, ChannelPipeline를 사용하여  
       인’아웃 바운드의 이벤트 흐름 제어
     - Handler
         - RedisDecoder, RedisBulkStringAggregator, RedisArrayAggregator 사용,
