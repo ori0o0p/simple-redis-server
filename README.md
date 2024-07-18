@@ -1,7 +1,7 @@
 # Netty-based Redis Server
 ![image](https://github.com/user-attachments/assets/8b49a2f2-de6b-4e9a-ab9d-f5c475c8eab5)
 
-## 필요 요소
+## 목표
 
 - 데이터 저장 : SET
 - 데이터 조회 : GET
