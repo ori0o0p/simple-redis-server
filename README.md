@@ -8,7 +8,7 @@
 
 Key-Value 인메모리 스토어 역할을 할 수 있을 정도만 구현.
 
-예를 들어 Redis의 INCR, DEL과 같은 명령어는 구현 대상에서 제외.
+예를 들어 Redis의 INCR, DEL과 같은 고오급~ 명령어는 구현 대상에서 제외.
 
 Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에서 제외.
 
