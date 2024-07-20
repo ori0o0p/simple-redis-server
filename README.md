@@ -51,3 +51,8 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
     - 입력된 명령어의 인자 개수가 3개인지 검증 → SET {key} {value}, 3개가 아니라면 에러 발생
     - key, value 추출 후 dataStore에 저장
       데이터가 성공적으로 저장되면 클라이언트에게 OK 메시지 전송
+
+
+
+
+<s>저는 레디스가 싫어요</s>
