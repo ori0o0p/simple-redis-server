@@ -31,6 +31,7 @@ public class SimpleRedisServer {
                             p.addLast(new RedisArrayAggregator());
                             p.addLast(new RedisEncoder());
                             p.addLast(new RedisCommandHandler());
+                            p.addLast(new RedisResponseHandler());
                         }
                     });
 
@@ -86,6 +87,27 @@ public class SimpleRedisServer {
             } else {
                 ctx.writeAndFlush(FullBulkStringRedisMessage.NULL_INSTANCE);
             }
+        }
+
+    }
+
+    private class RedisResponseHandler extends ChannelOutboundHandlerAdapter {
+        @Override
+        public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+            if (msg instanceof RedisMessage) {
+                System.out.println("응답 전송 중 : " + msg);
+                ctx.write(msg, promise);
+            } else {
+                System.out.println("레디스 메세지가 아닙니다. : " + msg);
+                ctx.write(msg, promise);
+            }
+        }
+
+        @Override
+        public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
+            System.err.println("ERR in RedisResponseHandler: " + cause.getMessage());
+            cause.printStackTrace();
+            ctx.close();
         }
     }
 
