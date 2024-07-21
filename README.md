@@ -28,6 +28,9 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
     - ServerBootstrap을 사용하여 소켓 채널 바인딩, Event Loop Group 셋팅, 채널 초기화 pipeline 구성
 - 새로운 연결을 수락할 소켓 채널
     - NIO API의 기능 활용하기 위해 NioServerSocketChannel 사용.
+![image](https://github.com/user-attachments/assets/60b5ddd6-9cd1-419f-af83-2c4ee33704d0)
+
+
 - 채널 초기화 pipeline
     - ServerBootstrap을 사용하여 채널 초기화 pipeline를 구성, ChannelPipeline를 사용하여  
       인’아웃 바운드의 이벤트 흐름 제어
