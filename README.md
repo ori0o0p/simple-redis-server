@@ -17,7 +17,7 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
 - Key-value 저장소 : In-memory Data Store
     - Java Collections Framework의 Map 자료구조를 사용 예정
     - Map 자료구조에서 Thread-safe하게 사용 가능한 ConcurrentMap 사용,
-      구현체로는 ConcurrentHashMap 클래스 사용
+      구현체로 ConcurrentHashMap 클래스 사용
 - 클라이언트 연결 수락을 하기 위한 Event Loop Group
      ![image](https://github.com/user-attachments/assets/43a783ba-f019-43c8-8ad1-a9b6a1348427)
 
