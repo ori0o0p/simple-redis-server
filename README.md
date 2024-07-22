@@ -30,8 +30,9 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
     - NIO API의 기능 활용하기 위해 NioServerSocketChannel 사용.
 ![image](https://github.com/user-attachments/assets/60b5ddd6-9cd1-419f-af83-2c4ee33704d0)
 
-
 - 채널 초기화 pipeline
+  ![image](https://github.com/user-attachments/assets/6150cbb9-2d68-4387-ae60-6467c90c03f2)
+
     - ServerBootstrap을 사용하여 채널 초기화 pipeline를 구성, ChannelPipeline를 사용하여  
       인’아웃 바운드의 이벤트 흐름 제어
     - Handler
