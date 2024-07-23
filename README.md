@@ -32,7 +32,7 @@ Redis Server만 구현 대상이기 때문에 Redis Client는 구현 대상에�
 
 - 채널 초기화 pipeline
   ![image](https://github.com/user-attachments/assets/6150cbb9-2d68-4387-ae60-6467c90c03f2)
-    <i><small>이해를 돕기 위한 다이어그램</small></i>
+    <i><small>이해만을 돕기 위한 다이어그램</small></i>
     
     - ServerBootstrap을 사용하여 채널 초기화 pipeline를 구성, ChannelPipeline를 사용하여  
       인’아웃 바운드의 이벤트 흐름 제어
